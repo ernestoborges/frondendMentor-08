@@ -1,4 +1,2 @@
-fetch("data.json")
-  .then(response => response.json())
-  .then(json => console.log(data));
-
+const data = require("data.json");
+console.log(data);
