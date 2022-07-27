@@ -1,10 +1,3 @@
-// async function fetchChartData(){
-//   const chartFetch = await fetch("./data.json");
-//   const data = await chartFetch.json();
-// }
-
-// fetchChartData();
-// console.log(chartData);
 const chartItem = document.querySelectorAll(".chart-item");
 
 async function foo() {
@@ -19,38 +12,6 @@ async function foo() {
 }
 
 foo();
-
-
-// const data = [
-//     {
-//       "day": "mon",
-//       "amount": 17.45
-//     },
-//     {
-//       "day": "tue",
-//       "amount": 34.91
-//     },
-//     {
-//       "day": "wed",
-//       "amount": 52.36
-//     },
-//     {
-//       "day": "thu",
-//       "amount": 31.07
-//     },
-//     {
-//       "day": "fri",
-//       "amount": 23.39
-//     },
-//     {
-//       "day": "sat",
-//       "amount": 43.28
-//     },
-//     {
-//       "day": "sun",
-//       "amount": 25.48
-//     }
-// ]
 
 for(let i=0; i<chartItem.length; i++){
 
