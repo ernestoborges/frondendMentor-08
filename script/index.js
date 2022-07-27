@@ -15,12 +15,12 @@ async function foo() {
 const data = foo();
 console.log(data);
 console.log(data.promise);
-console.log(data.promise.PromiseResult);
-console.log(data.Promise.PromiseResult);
 console.log(data[0]);
 console.log(data[1]);
 console.log(data[0].day);
 console.log(data[0].amount);
+console.log(data.promise[0]);
+console.log(data.promise[0].day);
 
 
 // const data = [
