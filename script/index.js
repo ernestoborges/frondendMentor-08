@@ -5,12 +5,11 @@
 
 // fetchChartData();
 // console.log(chartData);
-let data = 0;
+var data;
 fetch('./data.json')
-    .then(response => {
-        data = response.json();
-        console.log(data);
-    })
+    .then(response => res.json())
+    .then(objData => data = objData)
+    .then(() => console.log(data))
     .catch(error => {
         // handle the error
         console.log(error);
