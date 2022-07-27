@@ -5,7 +5,7 @@
 
 // fetchChartData();
 // console.log(chartData);
-const data;
+const data = 0;
 fetch('./data.json')
     .then(response => {
         data = response;
