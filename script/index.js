@@ -5,16 +5,14 @@
 
 // fetchChartData();
 // console.log(chartData);
-var data;
-fetch('./data.json')
-    .then(response => res.json())
-    .then(objData => data = objData)
-    .then(() => console.log(data))
-    .catch(error => {
-        // handle the error
-        console.log(error);
-    });
-console.log(data);
+async function foo() {
+  let obj;
+  const res = await fetch('./data.json')
+  obj = await res.json();
+  console.log(obj);
+  return obj;
+}
+const data = foo();
 
 // const data = [
 //     {
