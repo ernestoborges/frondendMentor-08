@@ -14,6 +14,7 @@ async function foo() {
   for(let i = 0; i< chartItem.length; i++){
     chartItem[i].getElementsByClassName("item-bar")[0].style.height = (data[i].amount) * 2 +"px";
     chartItem[i].getElementsByTagName("p")[0].innerHTML = data[i].day;
+    chartItem[i].getElementsByTagName("span")[0].innerHTML = data[i].amount;
   }
 }
 
