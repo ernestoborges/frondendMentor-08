@@ -13,6 +13,7 @@ async function foo() {
   return obj;
 }
 const data = foo();
+console.log(data);
 
 // const data = [
 //     {
