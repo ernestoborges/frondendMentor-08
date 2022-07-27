@@ -23,4 +23,150 @@
 body {
     font-size: 1.125rem;
     font-family: "DM Sans";
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--cream);
+    margin: 1.5rem 0;
+}
+
+h1 {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.container {    
+    width: 375px;
+    padding: 1rem;
+}
+
+.card {    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-title {
+    background-color: var(--soft-red);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.313rem;
+    border-radius: 0.5rem;
+    color: var(--very-pale-orange);
+}
+
+.card-title output {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-title img {
+    width: 60px;
+    height: 40px;
+    margin: auto 3px auto 0;
+}
+
+.card-body {
+    width: 100%;
+    background-color: var(--very-pale-orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.313rem;
+    border-radius: 0.5rem;
+}
+
+.chart-article {
+    width: 100%;
+}
+
+.chart-article h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-brown);
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+}
+
+.chart-item {
+    width: 33px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.item-bar {
+    height: 100px;
+    background-color: var(--soft-red);
+    border-radius: 0.25rem;
+}
+
+.chart-item span{
+    visibility: visible;
+    position: absolute;
+    transform: translate(-50%,-120%);
+    font-size: 0.75rem;
+    font-weight: 700;
+    background-color: var(--dark-brown);
+    color: var(--very-pale-orange);
+    border-radius: 0.2rem;
+    padding: 0.25rem;
+}
+
+.chart-item p {
+    font-size: 0.75rem;
+    color: var(--medium-brown);
+    margin: 0.75rem 0 0 0;
+}
+
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-footer div {
+    color: var(--medium-brown);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-footer div:first-child{
+   text-align: left;
+}
+
+.card-footer div:first-child output{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-brown);
+}
+
+.card-footer div:nth-child(2){
+    text-align: right;
+}
+
+.card-footer div:nth-child(2) output{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--dark-brown);
 }

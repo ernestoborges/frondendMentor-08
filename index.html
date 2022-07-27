@@ -6,34 +6,93 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-  <script type="text/javascript" src="data.json"></script>
-  
+
   <title>Frontend Mentor | Expenses chart component</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
   <main>
-    
+    <div class="container">
+      <article class="card">
+        <header class="card-title">
+          <div>
+            <h1>My balance</h1>
+            <output>$921.48</output>
+          </div>
+          <img src="images/logo.svg">
+        </header>
+        <div class="card-body">
+          <article class="chart-article">
+            <header class="chart-title">
+              <h1>Spending - Last 7 days</h1>
+            </header>
+            <div class="chart-container">
+              <div class="chart-item mon">
+                <div>
+                  <span class="item-value">$17.45</span> 
+                </div>
+                <div class="item-bar"></div>
+                <p>mon</p>
+              </div>
+              <div class="chart-item tue">
+                <div>
+                  <span class="item-value">$34.91</span>
+                </div>
+                <div class="item-bar"></div>
+                <p>tue</p>
+              </div>
+              <div class="chart-item wed">
+                <div>
+                  <span class="item-value">$52.36</span>
+                </div>
+                <div class="item-bar"></div>
+                <p>wed</p>
+              </div>
+              <div class="chart-item thu">
+                <div>
+                  <span class="item-value">$31.07</span>
+                </div>
+                <div class="item-bar"></div>
+                <p>thu</p>
+              </div>
+              <div class="chart-item fri">
+                <div>
+                  <span class="item-value">$23.39</span>
+                </div>
+                <div class="item-bar"></div>
+                <p>fri</p>
+              </div>
+              <div class="chart-item sat">
+                <div>
+                  <span class="item-value">$43.28</span>
+                </div>
+                <div class="item-bar"></div>
+                <p>sat</p>
+              </div>
+              <div class="chart-item sun">
+                <div>
+                  <span class="item-value">$25.48</span>
+                </div>
+                <div class="item-bar"></div>
+                <p>sun</p>
+              </div>
+            </div>
+          </article>
+          <hr>
+          <footer class="card-footer">
+            <div>
+              <h1>Total this month</h1>
+              <output>$478.33</output>
+            </div>
+            <div>
+              <output>+2.4%</output>
+              <h1>from last month</h1>
+            </div>
+          </footer>
+        </div>
+      </article>
+    </div>
   </main>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
   
   <footer>
     <div class="attribution">
@@ -42,6 +101,8 @@
     </div>
   </footer>
 
-<script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="script/data.json"></script>
+  <script data-main="script/config" src="script/require.js"></script>
+  <script type="text/javascript" src="script/index.js"></script>
 </body>
 </html>
