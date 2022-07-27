@@ -1,9 +1,11 @@
-async function fetchChartData(){
-  const chartFetch = await fetch("./data.json");
-  const data = await chartFetch.json();
-}
-fetchChartData();
-console.log(chartData);
+// async function fetchChartData(){
+//   const chartFetch = await fetch("./data.json");
+//   const data = await chartFetch.json();
+// }
+
+// fetchChartData();
+// console.log(chartData);
+import data from './data.json' assert {type: 'json'}.
 
 // const data = [
 //     {
