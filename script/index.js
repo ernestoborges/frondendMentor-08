@@ -8,7 +8,7 @@
 let data = 0;
 fetch('./data.json')
     .then(response => {
-        data = response;
+        data = response.json();
         console.log(data);
     })
     .catch(error => {
