@@ -5,7 +5,15 @@
 
 // fetchChartData();
 // console.log(chartData);
-import data from './data.json' assert {type: 'json'}.
+fetch('./data.json')
+    .then(response => {
+        data = response;
+    })
+    .catch(error => {
+        // handle the error
+        console.log(error);
+    });
+console.log(data);
 
 // const data = [
 //     {
