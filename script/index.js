@@ -5,22 +5,19 @@
 
 // fetchChartData();
 // console.log(chartData);
+const chartItem = document.querySelectorAll(".chart-item");
+
 async function foo() {
-  let obj;
   const res = await fetch('./data.json')
-  obj = await res.json();
-  console.log(obj);
-  return obj;
+  const data = await res.json();
+  
+  for(let i = 0; i< chartItem.length; i++){
+    chartItem[i].getElementsByClassName("item-bar")[0].style.height = (data[i].amount) * 2 +"px";
+    chartItem[i].getElementsByTagName("p")[0].innerHTML = data[i].day;
+  }
 }
-const data = foo();
-console.log(data);
-console.log(data.promise);
-console.log(data[0]);
-console.log(data[1]);
-console.log(data[0].day);
-console.log(data[0].amount);
-console.log(data.promise[0]);
-console.log(data.promise[0].day);
+
+foo();
 
 
 // const data = [
@@ -54,11 +51,7 @@ console.log(data.promise[0].day);
 //     }
 // ]
 
-const chartItem = document.querySelectorAll(".chart-item");
 for(let i=0; i<chartItem.length; i++){
-
-  chartItem[i].getElementsByClassName("item-bar")[0].style.height = (data[i].amount) * 2 +"px";
-  chartItem[i].getElementsByTagName("p")[0].innerHTML = data[i].day;
 
   chartItem[i].addEventListener("mouseover", function(){
     this.getElementsByClassName("item-bar")[0].style.opacity = "0.7";
