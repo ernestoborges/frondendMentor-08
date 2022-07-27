@@ -5,10 +5,10 @@
 
 // fetchChartData();
 // console.log(chartData);
-const data = 0;
 fetch('./data.json')
     .then(response => {
-        data = response;
+        const data = response;
+        console.log(data);
     })
     .catch(error => {
         // handle the error
