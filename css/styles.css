@@ -102,7 +102,8 @@ h1 {
 .chart-container {
     display: flex;
     justify-content: space-between;
-    height: 230px;
+    min-height: 200px;
+    padding-top: 30px;
 }
 
 .chart-item {
@@ -120,7 +121,7 @@ h1 {
 }
 
 .chart-item span{
-    visibility: hidden;
+    visibility: visible;
     position: absolute;
     transform: translate(-50%,-120%);
     font-size: 0.75rem;
@@ -169,4 +170,77 @@ h1 {
     font-size: 0.875rem;
     font-weight: 700;
     color: var(--dark-brown);
+}
+
+
+@media only screen and (min-width: 1000px){
+
+    main {
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    hr {
+        margin: 2rem 0;
+    }
+
+    .container {
+        width: 541px;
+        padding: 1rem 0;
+    }
+
+    .card-title {
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    .card-title output {
+        font-size: 2rem;
+    }
+
+    .card-title img {
+        width: 74px;
+        height: 50px;
+    }
+
+    .card-body {
+        padding: 2.5rem;
+        border-radius: 1rem;
+    }
+
+    .chart-article h1 {
+        font-size: 2rem;
+    }
+
+    .chart-container {
+        min-height: 244px;
+    }
+
+    .chart-item {
+        width: 51px;
+    }
+
+    .item-bar {
+        height: 100px;
+    }
+
+    .chart-item span{
+        font-size: 1.125rem;
+        padding: 0.5rem;
+    }
+
+    .chart-item p {
+        font-size: 1rem;
+        margin: 0.5rem 0 0 0;
+    }
+
+    .card-footer div:first-child output{
+        font-size: 3rem;
+    }
+
+    .card-footer div:nth-child(2) output{
+        font-size: 1rem;    }
+
 }
